@@ -239,6 +239,7 @@ a {
     display: flex;
     position: relative;
     margin-bottom: 30px;
+    justify-content: center;
 }
 
 .softc__projects__wrapper .nav-tabs .nav-tab::before {
