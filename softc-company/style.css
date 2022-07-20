@@ -873,8 +873,8 @@ form div button:hover {
         flex-basis: 50%;
     }
     form {
-        margin-top: 30px;
-        padding: 0 100px;
+        margin-top: 5px;
+        padding: 20px 100px;
     }
     .contact__content .contact__desc {
         margin-top: 30px;
