@@ -182,7 +182,7 @@ a {
 }
 
 .hero {
-    background-image: url(/img/background__section.webp);
+    background-image: url(./img/background__section.webp);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -355,24 +355,24 @@ a {
 
 .choose .choose__wrapper .choose__item:nth-child(1) {
     overflow: hidden;
-    background: linear-gradient(0deg, rgba(245, 88, 129, 0.9) 0%, rgba(246, 133, 104, 0.9) 100%), url("/img/choose-section/choose-item-1.webp");  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(0deg, rgba(245, 88, 129, 0.9) 0%, rgba(246, 133, 104, 0.9) 100%), url("/img/choose-section/choose-item-1.webp"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(0deg, rgba(245, 88, 129, 0.9) 0%, rgba(246, 133, 104, 0.9) 100%), url("./img/choose-section/choose-item-1.webp");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(0deg, rgba(245, 88, 129, 0.9) 0%, rgba(246, 133, 104, 0.9) 100%), url("./img/choose-section/choose-item-1.webp"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .choose .choose__wrapper .choose__item:nth-child(2) {
     overflow: hidden;
-    background: linear-gradient(0deg, rgba(245, 88, 129, 0.9) 0%, rgba(246, 133, 104, 0.9) 100%), url("/img/choose-section/choose-item-2.webp");  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(0deg, rgba(245, 88, 129, 0.9) 0%, rgba(246, 133, 104, 0.9) 100%), url("/img/choose-section/choose-item-2.webp"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(0deg, rgba(245, 88, 129, 0.9) 0%, rgba(246, 133, 104, 0.9) 100%), url("./img/choose-section/choose-item-2.webp");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(0deg, rgba(245, 88, 129, 0.9) 0%, rgba(246, 133, 104, 0.9) 100%), url("./img/choose-section/choose-item-2.webp"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .choose .choose__wrapper .choose__item:nth-child(3) {
     overflow: hidden;
-    background: linear-gradient(0deg, rgba(245, 88, 129, 0.9) 0%, rgba(246, 133, 104, 0.9) 100%), url("/img/choose-section/choose-item-3.webp");  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(0deg, rgba(245, 88, 129, 0.9) 0%, rgba(246, 133, 104, 0.9) 100%), url("/img/choose-section/choose-item-3.webp"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(0deg, rgba(245, 88, 129, 0.9) 0%, rgba(246, 133, 104, 0.9) 100%), url("./img/choose-section/choose-item-3.webp");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(0deg, rgba(245, 88, 129, 0.9) 0%, rgba(246, 133, 104, 0.9) 100%), url("./img/choose-section/choose-item-3.webp"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -474,7 +474,7 @@ a {
 .help {
     padding-top: 80px;
     padding-bottom: 90px;
-    background-image: url(/img/background__section.webp);
+    background-image: url(./img/background__section.webp);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -690,7 +690,7 @@ a {
 .awards {
     padding-top: 80px;
     padding-bottom: 90px;
-    background-image: url(/img/background__section.webp);
+    background-image: url(./img/background__section.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
