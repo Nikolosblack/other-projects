@@ -1286,6 +1286,7 @@ input::placeholder{
     color: #fff;
     letter-spacing: 0.208px;
     line-height: 27px;
+    white-space: nowrap;
 }
 
 a[href^="tel:"],
