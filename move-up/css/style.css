@@ -106,16 +106,43 @@ img {
     margin-top: 20px;
 }
 
-.section__header .img__dots {
-    object-fit: contain;
-    object-position: 50% 50%;
-    height: 32px;
-    margin-top: 25px;
+span.dotdot {
+    position: relative;
+    height: 8px;
+    width: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 25px auto 0;
+    /* margin: 25px auto 0 10px; */
+}
+
+span.dotdot:before {
+    position: absolute;
+    content: '';
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    right: 8px;
+    padding: 2px;
+}
+
+span.dotdot:after {
+    position: absolute;
+    content: '';
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    right: -12px;
+    padding: 2px;
 }
 
 .section__header p {
     margin-top: 20px;
 }
+
 @media screen and (min-width: 768px) {
     .section__header .header__img {
         padding: 15px;
@@ -128,6 +155,7 @@ img {
         font-size: 46px;
     }     
 }
+
 @media screen and (min-width: 991px) {
     .section__header h2 {
         font-size: 54px;
@@ -840,6 +868,10 @@ img {
     border-radius: 50%;
 }
 
+.strategy .section__header span.dotdot {
+    margin: 25px auto 0 10px;
+}
+
 .strategy .section__header h2 {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
@@ -1071,6 +1103,10 @@ img {
 
 .contact .section__header .header__img {
     border-radius: 50%;
+}
+
+.contact .section__header span.dotdot {
+    margin: 25px auto 0 10px;
 }
 
 .contact .section__header h2 {
@@ -1359,3 +1395,4 @@ a[href^="mailto:"] {
         margin-top: 0;
     }
 }
+
