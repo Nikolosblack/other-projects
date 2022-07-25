@@ -57,7 +57,7 @@ a {
 
 img {
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
     display: block;
 }
@@ -445,6 +445,8 @@ span.dotdot:after {
     }
     .hero__wrapper .hero__img {
         margin-top: 0;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -929,6 +931,10 @@ span.dotdot:after {
         font-size: 27px;
         line-height: 1.19;
     }
+    .strategy__wrapper .strategy__img {
+        display: flex;
+        align-items: flex-start;
+    }
 }
 
 @media screen and (min-width: 991px) {
@@ -1199,6 +1205,10 @@ input::placeholder{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+    }
+    .contact__wrapper .contact__img {
+        display: flex;
+        align-items: center;
     }
 }
 
