@@ -1,0 +1,592 @@
+:root {
+    --main-color: #fed741;
+    --white: #fff;
+    --black: #121111;
+    --secondary-font-color: #eb2f5b;
+    --transition: all .2s ease-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--white);
+    scroll-behavior: smooth;
+}
+
+body {
+
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.btn__group {
+    margin-top: 70px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 15.4px;
+    font-weight: 700;
+    line-height: 15.4px;
+    letter-spacing: 0.462px;
+    padding: 16px 32px;
+    border-radius: 34px;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.btn-dark {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.btn-light {
+
+}
+
+.btn-warning {
+   background-color: var(--main-color);
+   color: var(--black);
+}
+
+.text-danger {
+
+}
+
+.text-dark {
+    color: var(--black);
+}
+
+.text-warning {
+    color: var(--main-color);
+}
+
+.bg-info {
+    background-color: #82ebe7;
+}
+
+.bg-dark {
+    background-color: var(--black);
+}
+
+.bg-warning {
+    background-color: var(--main-color);
+}
+
+.parallax {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.parallax::after {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-attachment: fixed;
+    background-image: url(../img/parallax-background.webp);
+    background-position: 49.38% 14.92%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+
+@media screen and (min-width:768px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+
+@media screen and (min-width:991px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+.header {
+    background: var(--main-color);
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.nav .logo__wrapper {
+    z-index: 99999;
+}
+
+.nav .logo__wrapper .logo {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 37px;
+    color: var(--black);
+}
+
+.nav .menu__wrapper {
+    display: none;
+}
+
+.nav .menu__wrapper .menu {
+    display: flex;
+    margin-right: 10px;
+}
+
+.nav .menu li {
+    margin: 5px 7.5px;
+}
+
+.nav .menu li .menu__link {
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--black);
+    transition: var(--transition);
+}
+
+.nav .menu li .menu__link:hover {
+    color: var(--secondary-font-color);
+}
+
+.nav .menu__wrapper .social {
+    display: flex;
+    margin-left: 0 10px;
+}
+
+.nav .menu__wrapper .social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    transition: var(--transition);
+}
+
+.nav .menu__wrapper .social a:hover {
+    background-color: #2c2a2a;
+}
+
+.nav .menu__wrapper .social a {
+    color: var(--main-color);
+}
+
+.nav__bar {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: var(--black);
+    transition: all 0.7s ease-in-out;
+    z-index: 9999;
+    padding: 100px 30px;
+}
+
+.nav__bar .bar__menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__bar .menu li {
+    margin: 20px 5px;
+    text-align: center;
+}
+
+.nav__bar .menu li a {
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.nav__bar .menu li a:hover {
+    color: var(--main-color);
+}
+
+.nav__bar .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav__bar .social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0 7.5px;
+    transition: var(--transition);
+}
+
+.nav__bar .social a:hover {
+    background-color: #2c2a2a;
+}
+
+.nav__bar .social a i {
+    color: var(--main-color);
+}
+
+.color--light {
+    color: #fff!important;
+}
+
+.background--light,
+.background--light::before,
+.background--light::after {
+    background-color: #fff!important;
+}
+
+@media screen and (min-width: 991px) {
+    .burger-menu {
+        display: none;
+    }
+    .nav .menu__wrapper {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav__bar.active {
+        top: 0;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .logo span{     
+        color: white;   
+    } 
+}
+
+.hero {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+.hero .title {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 800;
+    color: var(--black);
+}
+
+.hero picture {
+    display: block;
+    position: relative;
+    /* padding-top: 33.3333%; */
+    overflow: hidden;
+    padding-top: 26.32%;
+    margin-top: 35px;
+    margin-bottom: 95px;
+}
+
+.hero picture img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.hero p {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 800;
+    color: var(--black);
+}
+
+@media screen and (min-width:768px) {
+    .hero {
+        padding-top: 90px;
+        padding-bottom: 115px;
+    }
+    .hero .title {
+        font-size: 97px;
+    }
+    .hero p {
+        font-size: 24px;
+        line-height: 31px;
+    }
+}
+
+@media screen and (min-width:991px) {
+    .hero {
+        padding-top: 90px;
+        padding-bottom: 140px;
+    }
+    .hero picture {
+        margin-bottom: 50px;
+    }
+    .hero .title {
+        font-size: 130px;
+    }
+    .hero p {
+        font-size: 26px;
+        line-height: 33px;
+    }
+}
+
+.about__wrapper .about__img {
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+
+.about__wrapper .about__content {
+    margin-top: 50px;
+}
+
+.header__section h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 41.8px;
+
+}
+
+.header__section h2::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 17%;
+    background-color: var(--main-color);
+    margin: 15px auto 15px 0;
+}
+
+.header__section h3 {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 32px;
+    color: var(--white);
+}
+
+.header__section p {
+    margin-top: 25px;
+}
+
+.about__content .about__icon__list {
+    margin-top: 20px;
+}
+
+.about__icon__list span {
+    display: flex;
+    align-items: center;
+}
+
+.about__icon__list span:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.about__icon__list span::before {
+    content: "";
+    display: block;
+    background-image: url(../img/svg/about-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    max-width: 20px;
+    width: 100%;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.about__desc__inner {
+    margin-top: 90px;
+}
+
+.about__desc__inner .about__desc {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 22px;
+    line-height: 28.6px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.about__us__wrapper {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.about__us__wrapper .about__us__item img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.about__us__wrapper .about__us__item h4 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 34.5px;
+}
+
+.about__us__wrapper .about__us__item h4::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 15%;
+    background-color: currentColor;
+    margin: 15px auto;
+}
+
+.about__us__wrapper .about__us__item p {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+
+.about__us__wrapper .about__us__item:not(:first-child) {
+    margin-top: 50px;
+}
+
+@media screen and (min-width:768px) {
+    .about__wrapper .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .about__wrapper .about__content {
+        margin-top: 0;
+    }
+    .header__section h2 {
+        font-size: 44px;
+        line-height: 48.4px;
+    }
+    .about__desc__inner .about__desc {
+        font-size: 24px;
+        line-height: 31.2px;
+        max-width: 65%;
+        margin: 0 auto;
+    }
+    .about__us__wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .about__us__wrapper .about__us__item:not(:first-child) {
+        margin-top: 0;
+    }
+    .about__us__wrapper .about__us__item h4 {
+        font-size: 27px;
+        line-height: 38.8px;
+    }
+    
+}
+
+@media screen and (min-width:991px) {
+    .header__section h2 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .about__content .about__icon__list {
+        margin-top: 40px;
+    }
+    .about__desc__inner .about__desc {
+        font-size: 26px;
+        line-height: 33.8px;
+    }
+    .about__us__wrapper .about__us__item h4 {
+        font-size: 30px;
+        line-height: 43px;
+    }
+}
+
+.services {
+    background-color: var(--secondary-font-color);
+}
+
+.services__wrapper .services__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 55px 47px;
+}
+
+.services__wrapper .services__item h4 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 41.8px;
+}
+
+.services__wrapper .services__item h4::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 10%;
+    background-color: currentColor;
+    margin: 15px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .services__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
