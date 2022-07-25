@@ -4,6 +4,7 @@
     width: 27px;
     overflow: visible;
     position: relative;
+    z-index: 99999;
  
 }
 .burger-menu:hover {
