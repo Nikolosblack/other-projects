@@ -356,7 +356,7 @@ span.dotdot:after {
 .hero {
     padding-top: 90px;
     padding-bottom: 45px;
-    background-image: url(../img/hero__bg.webp);
+    background-image: url(../img/background/hero__bg.webp);
     background-repeat: no-repeat;
     background-position: 85.63% 46.15%;
     background-size: cover;
@@ -460,7 +460,7 @@ span.dotdot:after {
 .seo {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url(../img/section__bg.webp);
+    background-image: url(../img/background/section__bg.webp);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -690,7 +690,7 @@ span.dotdot:after {
 .background__wave--light {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: url(../img/wave-light.webp);
+    background: url(../img/background/wave-light.webp);
     background-repeat: no-repeat;
     background-position: 49.69% 33.48%;
     background-size: cover;
@@ -851,7 +851,7 @@ span.dotdot:after {
 .background__wave--dark {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: url(../img/wave-dark.webp);
+    background: url(../img/background/wave-dark.webp);
     background-repeat: no-repeat;
     background-position: 49.69% 33.48%;
     background-size: cover;
@@ -940,7 +940,7 @@ span.dotdot:after {
 .benefits {
     padding-top: 50px;
     padding-bottom: 80px;
-    background-image: url(../img/section__bg2.webp);
+    background-image: url(../img/background/section__bg2.webp);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1265,7 +1265,7 @@ input::placeholder{
 
 .building__bg {
     padding: 100px 0;
-    background-image: url(../img/footer.webp);
+    background-image: url(../img/background/footer.webp);
     background-position: 51.25% 75.86%;
     background-repeat: no-repeat;
     background-size: cover;
