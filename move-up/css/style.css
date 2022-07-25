@@ -1391,4 +1391,10 @@ a[href^="mailto:"] {
     .inner__down__wrapper p:not(:first-child) {
         margin-top: 0;
     }
+    .inner__up__item .social {
+        justify-content: start;
+    }
+    .inner__up__item .social a {
+        margin: 0 14px 15px 0;
+    }
 }
