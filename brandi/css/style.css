@@ -221,7 +221,7 @@ img {
     position: fixed;
     top: -100%;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: var(--black);
     transition: all 0.7s ease-in-out;
