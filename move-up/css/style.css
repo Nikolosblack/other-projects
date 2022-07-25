@@ -116,7 +116,6 @@ span.dotdot {
     border: 2px solid #fff;
     border-radius: 50%;
     margin: 25px auto 0;
-    /* margin: 25px auto 0 10px; */
 }
 
 span.dotdot:before {
@@ -792,7 +791,6 @@ span.dotdot:after {
     justify-content: center;
 }
 
-
 .slider  .slider__content {
     margin-top: 50px;
     display: flex;
@@ -839,6 +837,7 @@ span.dotdot:after {
 .slick-next {
     right: -15px;
 }
+
 .slick-prev {
     left: -15px;
 }
@@ -1202,14 +1201,6 @@ input::placeholder{
     padding-bottom: 90px;
 }
 
-.blog__wrapper {
-
-}
-
-.blog__wrapper .blog__content {
-    
-}
-
 .blog__wrapper .blog__content h4 {
     font-size: 38px;
     color: #fff;
@@ -1395,4 +1386,3 @@ a[href^="mailto:"] {
         margin-top: 0;
     }
 }
-
