@@ -426,7 +426,7 @@ img {
 
 .seo {
     padding-top: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     background-image: url(../img/section__bg.webp);
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -509,9 +509,9 @@ img {
     color: #f18191;
 }
 
-
-.seo__tabs__wrapper {
-    margin-top: 60px;
+.seo__tabs {
+    padding-top: 50px;
+    padding-bottom: 60px;
 }
 
 .seo__tabs__wrapper .tab {
