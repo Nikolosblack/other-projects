@@ -302,12 +302,8 @@ img {
     .nav__bar.active {
         top: 0;
     }
-}
-
-@media (prefers-color-scheme: dark) {
-    .logo span{     
-        color: white;   
-    } 
+    body.lock {
+        overflow: hidden;
 }
 
 .hero {
