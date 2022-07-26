@@ -964,7 +964,7 @@ img {
     padding-top: 90px;
     padding-bottom: 90px;
 }
-
+/* ///////////////////////////////////////// */
 
 
 
@@ -1011,4 +1011,106 @@ img {
     } 
 }
 
+.form__wrapper {
+    padding: 90px 24px;
+}
+.form__wrapper .header__section {
+    padding: 0 39px;
+}
 
+.form__wrapper form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 39px;
+}
+
+form .form__field:not(:nth-child(3)) {
+    margin-bottom: 24px;
+}
+
+.form__field,
+.button__field,
+.form__field label,
+.form__field input,
+.form__field button {
+    width: 100%;
+}
+
+.form__field input {
+    background-color: transparent;
+    border: 2px solid var(--white);
+    padding: 12px 24px;
+    border-radius: 34px;
+    margin-top: 12px;
+}
+
+.button__field {
+    margin-top: 56px;
+}
+
+.button__field button {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    padding: 12px 24px;
+    border-radius: 34px;
+    border: none;
+    transition: var(--transition);
+}
+
+.button__field button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.map__wrapper .map {
+    min-height: 300px;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+@media screen and (min-width:768px) {
+    .form__wrapper {
+        padding-top: 135px;
+        padding-bottom: 140px;
+    }
+    .contact__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .form__wrapper .header__section {
+        padding: 0 46px;
+    }
+    .form__wrapper form {
+        padding: 46px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .contact__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .form__wrapper .header__section {
+        padding: 0 60px;
+    }
+    .form__wrapper form {
+        padding: 60px;
+    }
+}
