@@ -837,7 +837,6 @@ img {
     overflow: hidden;
 }
 
-
 .work__wrapper .work__img img {
     width: 100%;
     min-height: 200px;
@@ -845,8 +844,6 @@ img {
     object-fit: cover;
     object-position: 50% 49.567%;
 }
-
-
 
 @media screen and (min-width:768px) {
     .work__wrapper {
@@ -863,4 +860,96 @@ img {
     }
 }
 
+.blog {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
 
+.blog .header__section h2::after {
+    width: 10%;
+}
+
+.blog__wrapper .blog__inner {
+    margin-top: 45px;
+}
+
+.blog__inner .blog__item:not(:first-child) {
+    margin-top: 50px;
+}
+
+.blog__inner .blog__item {
+    padding: 27px;
+    background-color: var(--white);
+}
+
+.blog__item span,
+.blog__item p {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0,0,0,0.5);
+}
+
+.blog__item h6 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 22px;
+    line-height: 28.6px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.blog__item p {
+    margin-top: 20px;
+}
+
+.blog__item .blog__bth__wrapper {
+    margin-top: 26.25px;
+}
+
+.blog__item .blog__btn {
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    line-height: 14px;
+    color: var(--secondary-font-color);
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.blog__item .blog__btn:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width:768px) {
+    .blog {
+        padding-top: 112.5px;
+        padding-bottom: 115px;
+    }
+    .blog__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .blog__inner .blog__item:not(:first-child) {
+        margin-top: 0;
+    }
+    .blog__item h6 {
+        font-size: 24px;
+        line-height: 31.2px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .blog {
+        padding-top: 135px;
+        padding-bottom: 140px;
+    }
+    .blog__inner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .blog__inner .blog__item:not(:first-child) {
+        margin-top: 0;
+    }
+    .blog__item h6 {
+        font-size: 26px;
+        line-height: 33.8px;
+    }
+}
