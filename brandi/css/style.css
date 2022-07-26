@@ -81,7 +81,7 @@ img {
 }
 
 .text-danger {
-
+    color: var(--secondary-font-color);
 }
 
 .text-dark {
@@ -612,7 +612,12 @@ img {
     object-fit: cover;
     padding-left: 7.5px;
     padding-right: 7.5px;
-    margin-top: 15px
+    margin-top: 15px;
+    transition: var(--transition);
+}
+
+.gallery__wrapper .gallery__item img:hover {
+    transform: scale(.95);
 }
 
 .project__content {
@@ -699,8 +704,113 @@ img {
     }
 }
 
+.branding  {
+    padding: 100px 0;
+    text-align: center; 
+}
+
+.branding__wrapper .header__section {
+    padding: 0 15px;
+}
+
+.branding__wrapper .header__section h2::after {
+    width: 10%;
+    margin-left: auto;
+}
+
+.branding__wrapper .header__section p {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 28.6px;
+}
+
+.branding__wrapper .header__section .btn__group {
+    margin-top: 50px;
+}
+
+.quote {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.quote-wrapper .quote__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+.quote-wrapper .quote__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: currentColor;
+    opacity: .2;
+}
+
+.quote__item p {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 28.6px;
+}
+
+.quote__item p::before {
+    content: "";
+    display: block;
+    background-image: url(../img/svg/quote-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.quote__item span {
+    margin-top: 20px;
+}
 
 
+@media screen and (min-width:768px) {
+    .branding {
+        padding-top: 130px;
+        padding-bottom: 135px;
+    }
+    .branding__wrapper .header__section h2 {
+        font-size: 44px;
+        line-height: 48.4px;
+    }
+    .branding__wrapper .header__section p,
+    .quote__item p {
+        font-size: 24px;
+        line-height: 31.2px;
+    }
+    .quote__item p::before {
+        width: 70px;
+        height: 70px;
+    }
+}
 
-
-
+@media screen and (min-width:991px) {
+    .branding {
+        padding-top: 160px;
+        padding-bottom: 170px
+    }
+    .branding__wrapper .header__section h2 {
+        font-size: 180px;
+        line-height: 180px;
+    }
+    .branding__wrapper .header__section p,
+    .quote__item p {
+        font-size: 26px;
+        line-height: 33.8px;
+    }
+}
