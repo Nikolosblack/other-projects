@@ -931,13 +931,16 @@ img {
     .blog__inner .blog__item:not(:first-child) {
         margin-top: 0;
     }
+    .blog__inner .blog__item {
+        padding: 28px;
+    }
     .blog__item h6 {
         font-size: 24px;
         line-height: 31.2px;
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:991px) {
     .blog {
         padding-top: 135px;
         padding-bottom: 140px;
@@ -948,8 +951,64 @@ img {
     .blog__inner .blog__item:not(:first-child) {
         margin-top: 0;
     }
+    .blog__inner .blog__item {
+        padding: 30px;
+    }
     .blog__item h6 {
         font-size: 26px;
         line-height: 33.8px;
     }
 }
+
+.brand__slider {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+
+
+
+
+
+
+
+.get__in__touch {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.get__in__touch__item:not(:first-child){
+    margin-top: 50px;
+}
+
+.get__in__touch__item a {
+    display: inline-block;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 22px;
+    line-height: 28.6px;
+    font-weight: 800;
+    margin-top: 20px;
+    color: var(--white);
+}   
+
+@media screen and (min-width:768px) {
+    .get__in__touch {
+        padding-top: 135px;
+        padding-bottom: 135px;
+    }
+    .get__in__touch__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .get__in__touch__item:not(:first-child){
+        margin-top: 0;
+    }   
+    .get__in__touch__item a {
+        font-size: 26px;
+        line-height: 33.8px;
+    } 
+}
+
+
