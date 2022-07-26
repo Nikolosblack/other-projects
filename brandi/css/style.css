@@ -661,14 +661,11 @@ img {
     .gallery__wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 }
 
 @media screen and (min-width:768px) {
-    .gallery__wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
     .projects__list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -688,6 +685,10 @@ img {
 }
 
 @media screen and (min-width:991px) {   
+    .gallery__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     .projects__list .projects__list__item h5 {
         font-size: 50px;
         line-height: 55px;
