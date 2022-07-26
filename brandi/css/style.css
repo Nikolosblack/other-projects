@@ -106,8 +106,6 @@ img {
 
 .parallax {
     position: relative;
-    padding-top: 90px;
-    padding-bottom: 90px;
 }
 
 .parallax::after {
@@ -304,6 +302,7 @@ img {
     }
     body.lock {
         overflow: hidden;
+    }
 }
 
 .hero {
@@ -379,6 +378,11 @@ img {
     }
 }
 
+.about {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
 .about__wrapper .about__img {
     /* padding-left: 15px;
     padding-right: 15px; */
@@ -393,7 +397,7 @@ img {
     font-size: 38px;
     font-weight: 900;
     line-height: 41.8px;
-
+    overflow-wrap: anywhere;
 }
 
 .header__section h2::after {
@@ -401,7 +405,7 @@ img {
     display: block;
     height: 4px;
     width: 17%;
-    background-color: var(--main-color);
+    background-color: currentColor;
     margin: 15px auto 15px 0;
 }
 
@@ -414,6 +418,10 @@ img {
 
 .header__section p {
     margin-top: 25px;
+}
+
+.about .header__section h2::after {
+    background-color: var(--main-color);
 }
 
 .about__content .about__icon__list {
@@ -485,7 +493,6 @@ img {
     font-size: 18px;
     line-height: 27px;
 }
-
 
 .about__us__wrapper .about__us__item:not(:first-child) {
     margin-top: 50px;
@@ -560,6 +567,7 @@ img {
     font-size: 38px;
     font-weight: 900;
     line-height: 41.8px;
+    overflow-wrap: anywhere;
 }
 
 .services__wrapper .services__item h4::after {
@@ -571,15 +579,124 @@ img {
     margin: 15px 0;
 }
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width:768px) {
     .services__wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+.projects {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
 
+/* popup gallery*/
 
+.gallery__wrapper .gallery__item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-top: 92.43%;
+    max-width: 100%;
+    
+}
+
+.gallery__wrapper .gallery__item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin-top: 15px
+}
+
+.project__content {
+    margin-top: 45px;
+}
+
+.projects .header__section h2 {
+    color: var(--white);
+}
+
+.projects .header__section p {
+    margin-top: 0;
+}
+
+.project__content .projects__list {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.projects__list .projects__list__item:not(:first-child) {
+    margin-top: 50px;
+}
+
+.projects__list .projects__list__item h5 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 41.8px;
+}
+
+.projects__list .projects__list__item p {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 28.6px;
+    margin-top: 25px;
+}
+
+.projects__list .projects__list__item span {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+@media screen and (min-width:480px) {
+    .gallery__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .gallery__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .projects__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+    .projects__list .projects__list__item:not(:first-child) {
+        margin-top: 0;
+    }    
+    .projects__list .projects__list__item h5 {
+        font-size: 44px;
+        line-height: 48.4px;
+    }
+    .projects__list .projects__list__item p {
+        font-size: 24px;
+        line-height: 31.2px;
+    }
+}
+
+@media screen and (min-width:991px) {   
+    .projects__list .projects__list__item h5 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .projects__list .projects__list__item p {
+        font-size: 26px;
+        line-height: 26px;
+    }
+}
 
 
 
