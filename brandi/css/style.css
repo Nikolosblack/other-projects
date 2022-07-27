@@ -820,11 +820,53 @@ img {
     }
 }
 
-/*  */
+.team__item {
+    position: relative;
+}
 
+.team__content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+}
 
+.team__content p {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 28.6px;
+    background: var(--white);
+    color: var(--secondary-font-color);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
 
-/*  */
+.slick-prev {
+    left: 0;
+    z-index: 2;
+}
+
+.slick-next {
+    right: 0;
+    z-index: 2;
+}
+
+@media screen and (min-width:768px) {
+    .team__content p {
+        font-size: 24px;
+        line-height: 31.2px;
+    }
+}
+
+@media screen and (min-width:991px) {
+    .team__content p {
+        font-size: 26px;
+        line-height: 33.8px;
+    }
+}
 
 .work__concten {
     padding: 90px 24px;
