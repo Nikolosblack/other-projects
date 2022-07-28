@@ -548,8 +548,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    padding: 55px 40px;
+    justify-content: space-between;
+    padding: 55px 55px;
 }
 
 .services__wrapper .services__item h4 {
