@@ -557,7 +557,7 @@ img {
     font-size: 38px;
     font-weight: 900;
     line-height: 41.8px;
-    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .services__wrapper .services__item h4::after {
