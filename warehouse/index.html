@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/burger.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/burger.css">
+    <link rel="stylesheet" href="./css/style.css">
+ 
 </head>
 <body>
     <header class="header">
@@ -24,10 +25,10 @@
                         <a href="./index.html"><img src="./img/Logo.png" alt="logo"></a>
                     </div>
                     <menu class="menu" id="menu">
-                        <li><a class="menu__link active" href="#">About</a></li>
-                        <li><a class="menu__link" href="#">Help</a></li>
-                        <li><a class="menu__link" href="#">Features</a></li>
-                        <li><a class="menu__link" href="#">Signup</a></li>
+                        <li><a class="menu__link " href="#about">About</a></li>
+                        <li><a class="menu__link" href="#help">Help</a></li>
+                        <li><a class="menu__link" href="#features">Features</a></li>
+                        <li><a class="menu__link" href="#singup">Signup</a></li>
                     </menu>
                 </div>
                 <div class="header__btn">
@@ -38,10 +39,28 @@
                     <span></span>
                     <span></span>
                 </div>
+                <!-- <div class="burger-menu">
+                    <span></span>
+                </div> -->
             </nav>
+            <div class="nav__bar">
+                <div class="bar__menu">
+                    <menu class="menu">
+                        <li><a class="menu__link " href="#about">About</a></li>
+                        <li><a class="menu__link" href="#help">Help</a></li>
+                        <li><a class="menu__link" href="#features">Features</a></li>
+                        <li><a class="menu__link" href="#singup">Signup</a></li>
+                    </menu>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="about">
         <div class="container">
             <div class="hero__wrapper">
                 <h1>Save your data storage here.</h1>
@@ -52,7 +71,7 @@
             </div>
         </div>
     </section>
-    <section class="help">
+    <section class="help" id="help">
         <div class="container">
             <div class="help__wrapper">
                 <div class="help__img"> 
@@ -65,7 +84,7 @@
             </div>
         </div>
     </section>
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">
             <h2 class="subtitle">Features</h2>
             <p class="features__desc">Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.</p>
@@ -152,7 +171,7 @@
             </div>
         </div>
     </section>
-    <section class="singup">
+    <section class="singup" id="singup">
         <div class="container">
             <div class="singup__wrapper">
                 <div class="singup__content">
@@ -223,60 +242,8 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        const icons = document.querySelectorAll('.icon');
-        icons.forEach(icon => {
-            icon.addEventListener('click', (event) => {
-                icon.classList.toggle("open");
-            });
-        });
-
-        $('.responsive').slick({
-	infinite: true,
-    dots: true,
-	speed: 300,
-    arrows : false,
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	// autoplay: true,
-	autoplaySpeed: 3000,
-	// responsive: [{
-	// 		breakpoint: 1024,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 			infinite: true
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 991,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 			infinite: true
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 768,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 			infinite: true
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 480,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 			infinite: true
-	// 		}
-	// 	}
-	// 	// You can unslick at a given breakpoint now by adding:
-	// 	// settings: "unslick"
-	// 	// instead of a settings object
-	// ]
-});
-    </script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/burger.js"></script>
 </body>
 </html>
+
