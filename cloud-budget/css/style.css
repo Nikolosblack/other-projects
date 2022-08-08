@@ -261,7 +261,7 @@ li .menu__link:hover:after {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 150px 0;
+    padding: 165px 0;
 }
 
 .hero .hero__wrapper {
@@ -516,13 +516,31 @@ li .menu__link:hover:after {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: auto;
     padding: 70px 25px 5px 25px;
 }
 
+.technology__item:nth-child(1) {
+    background-image: url("../img/tech-bg1.png");
+}
+
+.technology__item:nth-child(2) {
+    background-image: url("../img/tech-bg2.png");
+}
+
+.technology__item:nth-child(3) {
+    background-image: url("../img/tech-bg3.png");
+}
+
+.technology__item:nth-child(4) {
+    background-image: url("../img/tech-bg4.png");
+}
 
 .technology__wrapper img {
     width: auto;
-   max-height: 55px;
+    max-height: 55px;
 }
 
 .technology__wrapper h3 {
@@ -549,5 +567,60 @@ li .menu__link:hover:after {
 @media (max-width: 480px) {
     .technology__wrapper {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.singup {
+    background-color: var(--secondary-font-color);
+    padding: 95px 0;
+}
+
+.singup__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.singup__wrapper .singup__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-width: 445px;
+}
+
+.singup h2 {
+    color: var(--white);
+}
+
+.singup p {
+    margin-top: 50px;
+}
+
+.singup .btn__group {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.singup .btn__group a {
+    transition: var(--transition);
+}
+
+.singup .btn__group a:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .singup__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    .singup__wrapper .singup__content {
+        align-items: center;
+        max-width: 100%;
+    }
+    .singup__img {
+        margin-top: 30px;
     }
 }
