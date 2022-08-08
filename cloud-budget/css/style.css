@@ -57,7 +57,6 @@ a {
 
 .header {
     position: relative;
-    height: 100vh;
     background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
 }
 
@@ -160,7 +159,7 @@ li .menu__link:hover:after {
   
 }
 
-.selectpicker  option {
+.selectpicker option {
     color: var(--black);
 }
 
@@ -239,7 +238,7 @@ li .menu__link:hover:after {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 .hero .hero__wrapper {
@@ -305,6 +304,23 @@ li .menu__link:hover:after {
     }
     body.lock {
         overflow: hidden;
+    }
+    .hero__wrapper h1 {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 64px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__wrapper h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height:50px;
+    }
+    .hero__wrapper p {
+        font-size: 20px;
+        line-height: 130%;
     }
 }
 
