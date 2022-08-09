@@ -624,3 +624,103 @@ li .menu__link:hover:after {
         margin-top: 30px;
     }
 }
+
+.contact {
+    padding: 117px 0 78px 0;
+}
+
+.contact__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+
+.contact .contact__content {
+    max-width: 434px;
+}
+
+.contact__content p {
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--black);
+    margin-top: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+}
+
+.form .form__field:first-child {
+    display: flex;
+    gap: 30px;
+}
+
+.form .form__field:not(:first-child) {
+    margin-top: 24px;
+}
+
+.form .btn__field {
+    margin-top: 27px;
+}
+
+.form input,
+.form select {
+    width: 100%;
+    padding: 20px 30px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+}
+
+.form select {
+    background: url("../img/select-arrow.svg") no-repeat right;
+    -webkit-appearance: none;
+    background-position: calc(100% - 0.75rem) center !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn__field button {
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white);
+    background-color: var(--secondary-font-color);
+    text-transform: uppercase;
+    border: none;
+    padding: 17px 34px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn__field button:hover {
+    background-color: transparent;
+    border: 1px solid var(--secondary-font-color);
+    color: var(--secondary-font-color);
+}
+
+@media (max-width: 768px) {
+    .contact__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .contact .contact__content {
+        max-width: 100%;
+        text-align: center;
+    }
+    .form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .form .form__field:first-child {
+        display: flex;
+        flex-direction: column;
+    }
+}
