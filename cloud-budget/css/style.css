@@ -715,7 +715,7 @@ input::-webkit-inner-spin-button {
         max-width: 100%;
         text-align: center;
     }
-    .form {
+    .contact__wrapper{
         max-width: 500px;
         margin: 0 auto;
     }
@@ -724,3 +724,4 @@ input::-webkit-inner-spin-button {
         flex-direction: column;
     }
 }
+
