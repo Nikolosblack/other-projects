@@ -49,6 +49,13 @@ h2.subtitle {
     color: var(--black);
 }
 
+h3 {
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--gray);
+    margin-top: 20px;
+}
+
 .btn {
     font-size: 14px;
     line-height: 140%;
@@ -543,13 +550,6 @@ li .menu__link:hover:after {
     max-height: 55px;
 }
 
-.technology__wrapper h3 {
-    font-size: 18px;
-    line-height: 22px;
-    color: var(--gray);
-    margin-top: 20px;
-}
-
 .technology__wrapper p {
     font-size: 12px;
     line-height: 14px;
@@ -723,5 +723,101 @@ input::-webkit-inner-spin-button {
         display: flex;
         flex-direction: column;
     }
+    .form .btn__field {
+        display: flex;
+        justify-content: center;
+    }
 }
 
+.footer {
+    padding: 85px 0;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--gray);
+}
+
+.footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.footer__wrapper .item__content {
+    margin-top: 33px;
+}
+
+.item__content .menu .menu__link {
+    color: var(--gray);
+}
+
+.item__content .menu li .menu__link:hover:after {
+    width: 100%;
+    color: var(--gray);
+}
+
+.item__content a[href^="tel:"],
+.item__content a[href^="mailto:"] {
+    display: block;
+    color: var(--gray);
+    margin-bottom: 15px;
+}
+
+.footer__item .social__media {
+    display: flex;
+    gap: 15px;
+}
+
+.footer__item .social__media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray);
+    width: 25px;
+    height: 25px;
+    transition: var(--transition);
+}
+
+.footer__item .social__media a:hover {
+    background-color: var(--secondary-font-color);
+    border-radius: 50%;
+}
+.footer__item .social__media a i {
+    font-size: 16px;
+}
+
+.item__content img {
+    max-width: 216px;
+    margin-left: 0;
+}
+
+.copyright {
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--gray);
+    padding: 20px 0;
+    color: var(--gray);
+}
+
+@media (max-width: 768px) {
+    .footer__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        text-align: center;
+    }
+    .footer__item .social__media {
+        display: flex;
+        justify-content: center;
+    }
+    .item__content img {
+       margin: 0 auto;
+    }
+    .copyright {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
