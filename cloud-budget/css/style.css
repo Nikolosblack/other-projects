@@ -682,7 +682,8 @@ li .menu__link:hover:after {
 }
 
 select {
-    color: rgba(19, 39, 67, 0.5);
+    color: #757575;
+    -webkit-text-fill-color: #757575;
 }
 
 input::-webkit-outer-spin-button,
