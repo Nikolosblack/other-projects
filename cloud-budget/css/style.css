@@ -681,6 +681,10 @@ li .menu__link:hover:after {
     background-position: calc(100% - 0.75rem) center !important;
 }
 
+select {
+    color: rgba(19, 39, 67, 0.5);
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
