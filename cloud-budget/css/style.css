@@ -682,10 +682,6 @@ li .menu__link:hover:after {
     background-position: calc(100% - 0.75rem) center !important;
 }
 
-select {
-
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -744,7 +740,6 @@ input::-webkit-inner-spin-button {
 .footer__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
 }
 
 .footer__wrapper .item__content {
