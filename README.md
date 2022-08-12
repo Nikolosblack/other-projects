@@ -19,7 +19,7 @@
 </tr>
 <tr>
 <td align="center">02</td>
-<td align="center"><a href="">Move-up</a></td>
+<td align="center"><a href="https://github.com/Nikolosblack/other-projects/tree/main/move-up">Move-up</a></td>
 <td align="center"><a href="https://nikolosblack.github.io/other-projects/move-up/" rel="nofollow">Live Demo</a></td>
 </tr>
 <tr>
