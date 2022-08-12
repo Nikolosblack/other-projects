@@ -24,7 +24,7 @@
 </tr>
 <tr>
 <td align="center">03</td>
-<td align="center"><a href="">Brandi</a></td>
+<td align="center"><a href="https://github.com/Nikolosblack/other-projects/tree/main/brandi">Brandi</a></td>
 <td align="center"><a href="https://nikolosblack.github.io/other-projects/brandi/" rel="nofollow">Live Demo</a></td>
 </tr>
 <tr>
