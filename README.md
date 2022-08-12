@@ -14,7 +14,7 @@
 <tbody>
 <tr>
 <td align="center">01</td>
-<td align="center"><a href="">Softc-company</a></td>
+<td align="center"><a href="https://github.com/Nikolosblack/other-projects/tree/main/softc-company">Softc-company</a></td>
 <td align="center"><a href="https://nikolosblack.github.io/other-projects/softc-company/index.html" rel="nofollow">Live Demo</a></td>
 </tr>
 <tr>
