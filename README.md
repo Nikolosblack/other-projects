@@ -34,7 +34,7 @@
 </tr>
 <tr>
 <td align="center">05</td>
-<td align="center"><a href="https://github.com/Nikolosblack/other-projects/tree/main/webify">Cloud-budget</a></td>
+<td align="center"><a href="https://github.com/Nikolosblack/other-projects/tree/main/webify">Webify</a></td>
 <td align="center"><a href="https://nikolosblack.github.io/other-projects/webify/index.html" rel="nofollow">Live Demo</a></td>
 </tr>
 </tbody>
