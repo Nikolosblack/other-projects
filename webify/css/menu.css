@@ -1,0 +1,115 @@
+.menu-btn {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 27px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    width: 25px;
+    height: 2px;
+    background-color: #222;
+    display: block;
+}
+
+.menu-btn span {
+    margin: 0 auto;
+    position: relative;
+    top: 12px;
+    -webkit-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.menu-btn span:before {
+    margin-top: -8px;
+    transition-property: margin, -webkit-transform;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s, 0s;
+    -o-transition-delay: 0.2s, 0s;
+    transition-delay: 0.2s, 0s;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    width: 25px;
+    height: 2px;
+    background-color: #222;
+    display: block;
+}
+
+.menu-btn span:before,
+.menu-btn span:after {
+    position: absolute;
+    content: "";
+}
+
+.menu-btn span:after {
+    margin-top: 8px;
+    transition-property: margin, -webkit-transform;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s, 0s;
+    -o-transition-delay: 0.2s, 0s;
+    transition-delay: 0.2s, 0s;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    width: 25px;
+    height: 2px;
+    background-color: #222;
+    display: block;
+}
+
+.menu-btn span:before,
+.menu-btn span:after {
+    position: absolute;
+    content: "";
+}
+
+.menu-btn-ext span {
+    background-color: rgba(0, 0, 0, 0) !important;
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.menu-btn-ext span:before {
+    margin-top: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition-delay: 0s, 0.2s;
+    -o-transition-delay: 0s, 0.2s;
+    transition-delay: 0s, 0.2s;
+}
+
+.menu-btn-ext span:after {
+    margin-top: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition-delay: 0s, 0.2s;
+    -o-transition-delay: 0s, 0.2s;
+    transition-delay: 0s, 0.2s;
+}
+
+@media screen and (max-width: 991px) {
+    .menu-btn {
+        display: block;
+        margin-left: 30px;
+    }
+}

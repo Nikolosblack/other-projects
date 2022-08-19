@@ -1,0 +1,394 @@
+/* One Word Slider */
+
+.slider {
+    display: inline-block;
+    height: 60px;
+    overflow: hidden;
+    vertical-align: text-top;
+}
+
+.slider div {
+    color: var(--dark-gray);
+    height: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.slider-text1 {
+    animation: slide 8s ease infinite;
+}
+
+@keyframes slide {
+    0% {
+        margin-top: -300px;
+    }
+    5% {
+        margin-top: -200px;
+    }
+    33% {
+        margin-top: -200px;
+    }
+    38% {
+        margin-top: -100px;
+    }
+    66% {
+        margin-top: -100px;
+    }
+    71% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+/* background Animation */
+
+.tb-shap-animation1 {
+    position: absolute;
+    left: 64%;
+    top: 30%;
+    -webkit-animation: shapAnimation2 30s alternate infinite linear;
+    animation: shapAnimation2 30s alternate infinite linear;
+}
+
+.tb-shap-animation-in {
+    overflow: hidden;
+    border-radius: 10px;
+    border-bottom: 7px solid #e1dbf0;
+    height: 71px;
+    width: 67px;
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+.tb-shap-animation1 .tb-shap-animation-in span {
+    position: absolute;
+    height: 70px;
+    width: 80px;
+    border-radius: 10px;
+    border: 7px solid #e1dbf0;
+    -webkit-transform: rotate(63deg) skew(34deg);
+    -ms-transform: rotate(63deg) skew(34deg);
+    transform: rotate(63deg) skew(34deg);
+    top: 35px;
+    z-index: 1;
+    left: -7px;
+    border-left-width: 8px;
+}
+
+.tb-shap-animation4 {
+    position: absolute;
+    left: 64%;
+    top: 30%;
+    -webkit-animation: shapAnimation2 30s alternate infinite linear;
+    animation: shapAnimation2 30s alternate infinite linear;
+}
+
+.tb-shap-animation4 span {
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+    border: 7px solid #e1dbf0;
+}
+
+.tb-shap-animation2 {
+    position: absolute;
+    left: 10%;
+    top: 9%;
+    -webkit-animation: shapAnimation2 20s alternate infinite linear;
+    animation: shapAnimation2 20s alternate infinite linear;
+}
+
+.tb-shap-animation2 span {
+    border-radius: 20px;
+    display: block;
+    width: 75px;
+    height: 35px;
+    border: 7px solid #f0dcdb;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.tb-shap-animation3 {
+    height: 86px;
+    width: 86px;
+    border: 7px solid #dbedf0;
+    border-radius: 50%;
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    -webkit-animation: shapAnimation3 10s alternate infinite linear;
+    animation: shapAnimation3 10s alternate infinite linear;
+}
+
+.tb-shap-animation-wrap.tb-style1 .tb-shap-animation1 {
+    -webkit-animation: shapAnimation 60s alternate infinite linear;
+    animation: shapAnimation 60s alternate infinite linear;
+    left: 7.5%;
+    top: -29%;
+}
+
+.tb-shap-animation-wrap.tb-style1 .tb-shap-animation-in {
+    border-radius: 0;
+    border: none;
+    height: 426px;
+    width: 455px;
+}
+
+.tb-shap-animation-wrap.tb-style1 .tb-shap-animation-in b {
+    height: 32px;
+    position: absolute;
+    width: 395px;
+    bottom: 0;
+    left: 32px;
+    background: #fcddf0;
+}
+
+.tb-shap-animation-wrap.tb-style1
+    .tb-shap-animation1
+    .tb-shap-animation-in
+    span {
+    height: 400px;
+    width: 520px;
+    border-radius: 0;
+    border: 32px solid #fcddf0;
+    -webkit-transform: rotate(62deg) skew(32deg);
+    -ms-transform: rotate(62deg) skew(32deg);
+    transform: rotate(62deg) skew(32deg);
+    top: 250px;
+    left: -20px;
+    border-left-width: 36px;
+}
+
+.tb-shap-animation-wrap.tb-style1 .tb-shap-animation2 {
+    left: 44.9%;
+    top: 8.1%;
+    -webkit-animation: shapAnimation 30s alternate infinite linear;
+    animation: shapAnimation 30s alternate infinite linear;
+}
+
+.tb-shap-animation-wrap.tb-style1 .tb-shap-animation2 span {
+    width: 143px;
+    height: 38px;
+    border: 9px solid #ddfcf4;
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+.tb-shap-animation-wrap.tb-style1 .tb-shap-animation3 {
+    height: 681px;
+    width: 681px;
+    border: 30px solid #ddddfc;
+    right: -6%;
+    top: -90%;
+    -webkit-animation: shapAnimation 35s alternate infinite linear;
+    animation: shapAnimation 35s alternate infinite linear;
+}
+
+@-webkit-keyframes shapAnimation2 {
+    0% {
+        -webkit-transform: translate(0, 0) rotate(0deg);
+        transform: translate(0, 0) rotate(0deg);
+    }
+    20% {
+        -webkit-transform: translate(0, 5px) rotate(35deg);
+        transform: translate(0, 5px) rotate(35deg);
+    }
+    40% {
+        -webkit-transform: translate(5px, 5px) rotate(70deg);
+        transform: translate(5px, 5px) rotate(70deg);
+    }
+    60% {
+        -webkit-transform: translate(5px, 0) rotate(100deg);
+        transform: translate(5px, 0) rotate(100deg);
+    }
+    80% {
+        -webkit-transform: translate(5px, 5px) rotate(45deg);
+        transform: translate(5px, 5px) rotate(45deg);
+    }
+    100% {
+        -webkit-transform: translate(0, 0) rotate(0deg);
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@keyframes shapAnimation2 {
+    0% {
+        -webkit-transform: translate(0, 0) rotate(0deg);
+        transform: translate(0, 0) rotate(0deg);
+    }
+    20% {
+        -webkit-transform: translate(0, 5px) rotate(35deg);
+        transform: translate(0, 5px) rotate(35deg);
+    }
+    40% {
+        -webkit-transform: translate(5px, 5px) rotate(70deg);
+        transform: translate(5px, 5px) rotate(70deg);
+    }
+    60% {
+        -webkit-transform: translate(5px, 0) rotate(100deg);
+        transform: translate(5px, 0) rotate(100deg);
+    }
+    80% {
+        -webkit-transform: translate(5px, 5px) rotate(45deg);
+        transform: translate(5px, 5px) rotate(45deg);
+    }
+    100% {
+        -webkit-transform: translate(0, 0) rotate(0deg);
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@-webkit-keyframes shapAnimation3 {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    20% {
+        -webkit-transform: translate(-10px, -5px);
+        transform: translate(-10px, -5px);
+    }
+    40% {
+        -webkit-transform: translate(0, -10px);
+        transform: translate(0, -10px);
+    }
+    60% {
+        -webkit-transform: translate(10px, 0);
+        transform: translate(10px, 0);
+    }
+    80% {
+        -webkit-transform: translate(10px, 10px);
+        transform: translate(10px, 10px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes shapAnimation3 {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    20% {
+        -webkit-transform: translate(-10px, -5px);
+        transform: translate(-10px, -5px);
+    }
+    40% {
+        -webkit-transform: translate(0, -10px);
+        transform: translate(0, -10px);
+    }
+    60% {
+        -webkit-transform: translate(10px, 0);
+        transform: translate(10px, 0);
+    }
+    80% {
+        -webkit-transform: translate(10px, 10px);
+        transform: translate(10px, 10px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes shapAnimation {
+    0% {
+        -webkit-transform: translate(0, 0) rotate(0deg);
+        transform: translate(0, 0) rotate(0deg);
+    }
+    20% {
+        -webkit-transform: translate(73px, -1px) rotate(36deg);
+        transform: translate(73px, -1px) rotate(36deg);
+    }
+    40% {
+        -webkit-transform: translate(141px, 72px) rotate(72deg);
+        transform: translate(141px, 72px) rotate(72deg);
+    }
+    60% {
+        -webkit-transform: translate(83px, 122px) rotate(108deg);
+        transform: translate(83px, 122px) rotate(108deg);
+    }
+    80% {
+        -webkit-transform: translate(-40px, 72px) rotate(144deg);
+        transform: translate(-40px, 72px) rotate(144deg);
+    }
+    100% {
+        -webkit-transform: translate(0, 0) rotate(0deg);
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@keyframes shapAnimation {
+    0% {
+        -webkit-transform: translate(0, 0) rotate(0deg);
+        transform: translate(0, 0) rotate(0deg);
+    }
+    20% {
+        -webkit-transform: translate(73px, -1px) rotate(36deg);
+        transform: translate(73px, -1px) rotate(36deg);
+    }
+    40% {
+        -webkit-transform: translate(141px, 72px) rotate(72deg);
+        transform: translate(141px, 72px) rotate(72deg);
+    }
+    60% {
+        -webkit-transform: translate(83px, 122px) rotate(108deg);
+        transform: translate(83px, 122px) rotate(108deg);
+    }
+    80% {
+        -webkit-transform: translate(-40px, 72px) rotate(144deg);
+        transform: translate(-40px, 72px) rotate(144deg);
+    }
+    100% {
+        -webkit-transform: translate(0, 0) rotate(0deg);
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .tb-gallery-slider {
+        position: absolute;
+        height: calc(100% + 90px);
+        position: initial;
+        height: auto;
+        margin-top: 40px;
+    }
+    .tb-shop-feature.tb-style1 .tb-shop-feature-text {
+        max-width: 100%;
+    }
+    .tb-shap-animation-wrap.tb-style1 .tb-shap-animation-in {
+        transform: rotate(15deg) scale(0.4);
+    }
+    .tb-shap-animation-wrap.tb-style1 .tb-shap-animation2 span {
+        transform: rotate(15deg) scale(0.6);
+    }
+    .tb-shap-animation-wrap.tb-style1 .tb-shap-animation3 {
+        height: 300px;
+        width: 300px;
+        border-width: 12px;
+        right: -5%;
+        top: -79%;
+    }
+    .tb-shap-animation-wrap.tb-style1 .tb-shap-animation-in {
+        transform: rotate(15deg) scale(0.4);
+    }
+    .tb-shap-animation-wrap.tb-style1 .tb-shap-animation1 {
+        left: -15.5%;
+        top: -30%;
+    }
+    .tb-shap-animation-wrap.tb-style1 .tb-shap-animation2 {
+        left: 35.9%;
+        top: 2.1%;
+    }
+}
