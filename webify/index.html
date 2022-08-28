@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBIFY</title>
     <link rel="preload" href="/lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" id="webify-font-awesome-css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css?ver=1.0.0" type="text/css" media="all">
     <link rel="icon" href="https://webify-13e95.kxcdn.com/demo/webify/resume/wp-content/uploads/sites/11/2019/05/cropped-Favicon-32x32.png" sizes="32x32">
     <link rel="stylesheet" id="webify-font-awesome-v4-css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/v4-shims.min.css?ver=1.0.0" type="text/css" media="all">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,12 +60,12 @@
         </div>
     </div>
 </header>
-<main>
+<main class="mr-b">
     <section class="hero">
         <div class="container">
             <div class="hero__wrapper">
                 <p>David Gilmour</p>
-                <h1 class="ms-header__title">
+                <h1 class="ms-header__title" id="target">
                     Making at the sweet spot between <br> design and
                     <span class="slider">
                         <div class="slider-text1">speed.</div>
@@ -167,13 +169,259 @@
             </div>
         </div>
     </section>
+    <section class="experience">
+        <div class="container">
+            <header class="section-heading">
+                <p>Work Experience</p>
+                <h2>I've been fortunate enough to work for fortune 500 companies.</h2>
+            </header>
+            <div class="experience__wrapper">
+                <div class="experience__item">
+                    <span>Jan til Today</span>
+                    <div>
+                        <div class="experience__img">
+                            <img src="./img/1.jpg" alt="">
+                        </div>
+                        <p>Freelance Designer at Webfox.com</p>
+                    </div>
+                </div>
+                <div class="experience__item">
+                    <span>Jan 2018 - Feb 2019</span>
+                    <div>
+                        <div class="experience__img">
+                            <img src="./img/2.png" alt="">
+                        </div>
+                        <p>Creative Director at Nike</p>
+                    </div>
+                </div>
+                <div class="experience__item">
+                    <span>Feb 2018 - Mar 2019</span>
+                    <div>
+                        <div class="experience__img">
+                            <img src="./img/3.png" alt="">
+                        </div>
+                        <p>Freelance Designer at MagPlus</p>
+                    </div>
+                </div>
+                <div class="experience__item">
+                    <span>Apr 2017 - Jul 2018</span>
+                    <div>
+                        <div class="experience__img">
+                            <img src="./img/4.png" alt="">
+                        </div>
+                        <p>Web Designer at Envato</p>
+                    </div>
+                </div>
+                <div class="experience__item">
+                    <span>Jan 2014 - Feb 2016</span>
+                    <div>
+                        <div class="experience__img">
+                            <img src="./img/5.jpg" alt="">
+                        </div>
+                        <p>Head of Ideas at Optimizely</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="resume">
+        <div class="container">
+            <div class="resume__wrapper">
+                <div class="resume__tabs">
+                    <header class="section-heading">
+                        <p>More About Me</p>
+                        <h2>A fast & Agile Approachto project creation.</h2>            
+                    </header>
+                    <ul class="tab">
+                        <li><a href="#" data-tab="1" class="tablinks active">01 Myself</a></li>
+                        <li><a href="#" data-tab="2" class="tablinks">02 Education</a></li>
+                        <li><a href="#" data-tab="3" class="tablinks">03 Skillset</a></li>
+                    </ul>
+                    <div class="accordion-content">
+                        <div data-tab-content="1" class="tabcontent active">
+                            <div class="tabcontent__inner">
+                                <p>Energetic Adobe Certified Expert (ACE) web designer with 6+ years of experience. Seeking to enhance design excellence at Dujo International. Designed 5 responsive websites per month for Amphimia Global with 99% client satisfaction. Raised UX scores by 35% and customer retention by 18%. Received Awwards prize 2015.</p>
+                                <p>Enthusiastic web designer with 6 years of experience. Responsible for all web design duties at Amphimia Global, Inc. including design of multiple websites, creating UX and UI. Skilled in Adobe Creative Suite.</p>
+                                <div class="btn__group">
+                                    <a class="download__btn" href="#">Download CV</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tab-content="2" class="tabcontent">
+                            <div class="tabcontent__inner">
+                                <p>I graduated with a Bachelor of Science Degree in Economics at the University of the Philippines in the Visayas. I had job experiences related to customer service, data entry, teaching, research, writing, and the financial services industry. I am also a teacher by profession. I passed the Licensure Examination for Teachers dated September 25, 2011.</p>
+                                <p>Graduated with a Bachelor of Science Degree in Economics at the University of the Philippines in the Visayas. I had job experiences related to customer service, data entry, teaching, research, writing, and the financial services industry. I am also a teacher by profession. I passed the Licensure Examination for Teachers dated September 25, 2011. </p>
+                                <div class="btn__group">
+                                    <a class="download__btn" href="#">Download CV</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tab-content="3" class="tabcontent">
+                           <div class="tabcontent__inner">
+                                <p>As for job responsibilities should deal with screening of resumes, manpower pooling, collecting and processing pre- employment requirements, conducting New Employee Orientation, and assisting in the administration of the employee's benefits. </p>
+                                <p>Enthusiastic web designer with 6 years of experience. Responsible for all web design duties at Amphimia Global, Inc. including design of multiple websites, creating UX and UI. Skilled in Adobe Creative Suite.</p>
+                                <div class="btn__group">
+                                    <a class="download__btn" href="#">Download CV</a>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume__img">
+                    <img src="./img/man.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__overlay"></div>
+        <div class="container">
+            <header class="section-heading">
+                <p>More About Me</p>
+                <h2>A fast & Agile Approach to project creation.</h2>            
+            </header>
+            <div class="about__wrapper">
+                <div class="about__item">
+                    <h3>94%</h3>
+                    <div class="progressbar">
+                        <div class="percentage jquery" data-progress="94"></div>
+                    </div>
+                    <span>jQuery</span>
+                </div>
+                <div class="about__item">
+                    <h3>80%</h3>
+                    <div class="progressbar">
+                        <div class="percentage php" data-progress="80"></div>
+                    </div>
+                    <span>PHP</span>
+                </div>
+                <div class="about__item">
+                    <h3>70%</h3>
+                    <div class="progressbar">
+                        <div class="percentage wordpress" data-progress="70"></div>
+                    </div>
+                    <span>WordPress</span>
+                </div>
+                <div class="about__item">
+                    <h3>80%</h3>
+                    <div class="progressbar">
+                        <div class="percentage design" data-progress="80"></div>
+                    </div>
+                    <span>Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="contact__wrapper">
+                <div class="contact__form">
+                    <header class="section-heading">
+                        <p>Let's Talk</p>
+                        <h2>Let’s hear from you.We shall talk.</h2>            
+                    </header>
+                    <form action="#">
+                        <div class="form__field">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="form__field">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+                        <div class="form__field">
+                            <input type="text" placeholder="Your Subject">
+                        </div>
+                        <div class="form__field">
+                            <textarea name="Message" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="form__field__btn">
+                            <button type="submit" value="Submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact__slider">
+                    <div class="slick__wrapper">
+                        <div class="slick__inner">
+                            <div class="slick__item">
+                                <div class="gallery__img gallery-lg lg-1"></div>
+                                <div class="gallery__img gallery-sm sm-1"></div>
+                            </div>
+                        </div>
+                        <div class="slick__inner">
+                            <div class="slick__item">
+                                <div class="gallery__img gallery-lg lg-2"></div>
+                                <div class="gallery__img gallery-sm sm-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
-<footer></footer>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <a class="logo" href="./index.html"><img src="./img/Logo-White-1.png" alt="logo"></a>
+            <p>Make your beautiful blog or magazine website with this stunning WordPress theme. Crafted with an eye for details and care by ThemeBubble.</p>
+            <div class="social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a> 
+                <a href="#"><i class="fa fa-instagram"></i></a> 
+                <a href="#"><i class="fa fa-linkedin"></i></a> 
+                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            </div>
+            <form method="post">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit"><i class="fa fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <span>© 2018 Webify. Made with love & caffeine by ThemeBubble.</span>
+    </div>
+</footer>
+<div id="scrollToTopBtn" ><i class="fa fa-angle-up"></i></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./js/burger.js"></script>
-<script src="./iso.js"></script>
-<script></script>
-</body>
+<script src="./js/iso.js"></script>
+<script src="./js/tabs.js"></script>
+<script src="./js/slick.js"></script>
+<script>
 
+var target = document.querySelector("h1");
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+var rootElement = document.documentElement;
+
+// Next we want to create a function that will be called when that element is intersected
+function callback(entries, observer) {
+  // The callback will return an array of entries, even if you are only observing a single item
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      // Show button
+      scrollToTopBtn.classList.add("showBtn")
+    } else {
+      // Hide button
+      scrollToTopBtn.classList.remove("showBtn")
+    }
+  });
+}
+
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);
+    
+// Next we instantiate the observer with the function we created above. This takes an optional configuration
+// object that we will use in the other examples.
+let observer = new IntersectionObserver(callback);
+// Finally start observing the target element
+observer.observe(target);
+
+</script>
+</body>
 </html>
