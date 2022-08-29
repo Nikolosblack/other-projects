@@ -171,7 +171,7 @@ li .menu__link:hover,
     box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .bar__menu.active {
         left: 0;
     }
