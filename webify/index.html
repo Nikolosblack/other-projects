@@ -29,10 +29,10 @@
             </div>
             <div class="header__right">
                 <menu class="menu">
-                    <li><a class="menu__link" href="#">Home</a></li>
+                    <li><a class="menu__link" href="./index.html">Home</a></li>
                     <li><a class="menu__link" href="#">Mega Menu</a></li>
-                    <li><a class="menu__link" href="#">Download Resume</a></li>
-                    <li><a class="menu__link" href="#">Contact</a></li>
+                    <li><a class="menu__link" href="#resume">Download Resume</a></li>
+                    <li><a class="menu__link" href="#contact">Contact</a></li>
                 </menu>
                 <div class="btn__group">
                     <a class="header-btn" href="#">Get Webify Today</a>
@@ -42,7 +42,7 @@
         </nav>
         <div class="bar__menu" id="accordian">
             <ul class="dropdown__menu">
-                <li class="menu__child"><a class="menu__link" href="#">Home</a></li>
+                <li class="menu__child"><a class="menu__link" href="./index.html">Home</a></li>
                 <li class="menu__child menu__child__drop">
                     <a class="menu__child-link" href="#">Mega Menu</a>
                     <div class="drop__body">
@@ -54,8 +54,8 @@
                         </ul>
                     </div>
                 </li>
-                <li class="menu__child"><a class="menu__link" href="#">Download Resume</a></li>
-                <li class="menu__child"><a class="menu__link" href="#">Contact</a></li>
+                <li class="menu__child"><a class="menu__link" href="#resume">Download Resume</a></li>
+                <li class="menu__child"><a class="menu__link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -180,7 +180,7 @@
                     <span>Jan til Today</span>
                     <div>
                         <div class="experience__img">
-                            <img src="./img/1.jpg" alt="">
+                            <img src="./img/experience-1.jpg" alt="company">
                         </div>
                         <p>Freelance Designer at Webfox.com</p>
                     </div>
@@ -189,7 +189,7 @@
                     <span>Jan 2018 - Feb 2019</span>
                     <div>
                         <div class="experience__img">
-                            <img src="./img/2.png" alt="">
+                            <img src="./img/experience-2.png" alt="company">
                         </div>
                         <p>Creative Director at Nike</p>
                     </div>
@@ -198,7 +198,7 @@
                     <span>Feb 2018 - Mar 2019</span>
                     <div>
                         <div class="experience__img">
-                            <img src="./img/3.png" alt="">
+                            <img src="./img/experience-3.png" alt="company">
                         </div>
                         <p>Freelance Designer at MagPlus</p>
                     </div>
@@ -207,7 +207,7 @@
                     <span>Apr 2017 - Jul 2018</span>
                     <div>
                         <div class="experience__img">
-                            <img src="./img/4.png" alt="">
+                            <img src="./img/experience-4.png" alt="company">
                         </div>
                         <p>Web Designer at Envato</p>
                     </div>
@@ -216,7 +216,7 @@
                     <span>Jan 2014 - Feb 2016</span>
                     <div>
                         <div class="experience__img">
-                            <img src="./img/5.jpg" alt="">
+                            <img src="./img/experience-5.jpg" alt="company">
                         </div>
                         <p>Head of Ideas at Optimizely</p>
                     </div>
@@ -224,7 +224,7 @@
             </div>
         </div>
     </section>
-    <section class="resume">
+    <section class="resume" id="resume">
         <div class="container">
             <div class="resume__wrapper">
                 <div class="resume__tabs">
@@ -268,7 +268,7 @@
                     </div>
                 </div>
                 <div class="resume__img">
-                    <img src="./img/man.png" alt="">
+                    <img src="./img/man.png" alt="man">
                 </div>
             </div>
         </div>
@@ -312,7 +312,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="contact__wrapper">
                 <div class="contact__form">
@@ -361,14 +361,14 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
-            <a class="logo" href="./index.html"><img src="./img/Logo-White-1.png" alt="logo"></a>
+            <a class="logo" href="./index.html"><img src="./img/logo-white.png" alt="logo"></a>
             <p>Make your beautiful blog or magazine website with this stunning WordPress theme. Crafted with an eye for details and care by ThemeBubble.</p>
             <div class="social">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a> 
-                <a href="#"><i class="fa fa-instagram"></i></a> 
-                <a href="#"><i class="fa fa-linkedin"></i></a> 
-                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                <a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a> 
+                <a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a> 
+                <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a> 
+                <a href="https://pinterest.com/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
             </div>
             <form method="post">
                 <input type="email" placeholder="Enter your email" required>
@@ -388,40 +388,6 @@
 <script src="./js/iso.js"></script>
 <script src="./js/tabs.js"></script>
 <script src="./js/slick.js"></script>
-<script>
-
-var target = document.querySelector("h1");
-var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-var rootElement = document.documentElement;
-
-// Next we want to create a function that will be called when that element is intersected
-function callback(entries, observer) {
-  // The callback will return an array of entries, even if you are only observing a single item
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      // Show button
-      scrollToTopBtn.classList.add("showBtn")
-    } else {
-      // Hide button
-      scrollToTopBtn.classList.remove("showBtn")
-    }
-  });
-}
-
-function scrollToTop() {
-  rootElement.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  })
-}
-scrollToTopBtn.addEventListener("click", scrollToTop);
-    
-// Next we instantiate the observer with the function we created above. This takes an optional configuration
-// object that we will use in the other examples.
-let observer = new IntersectionObserver(callback);
-// Finally start observing the target element
-observer.observe(target);
-
-</script>
+<script src="./js/scroll.js"></script>
 </body>
 </html>

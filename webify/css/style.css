@@ -3,7 +3,9 @@
     --dark-gray: #222;
     --white: #fff;
     --light: #f8f9fa;
+    --black: #000;
     --transition: all 0.3s ease;
+    --main-font:"Roboto", sans-serif;
 }
 
 * {
@@ -13,7 +15,7 @@
 }
 
 html {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 300;
     line-height: 22.4px;
@@ -21,6 +23,7 @@ html {
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -66,7 +69,7 @@ h2 {
 }
 
 main.mr-b {
-    background-color: #fff;
+    background-color: var(--white);
     z-index: 9999 !important;
 }
 
@@ -152,10 +155,10 @@ li .menu__link:hover,
     padding: 0.7em 2.1em;
     font-size: 14px;
     font-weight: 500;
-    color: #222;
+    color: var(--dark-gray);
     line-height: 1.5em;
     border-radius: 22.4px;
-    background-color: #fff;
+    background-color: var(--white);
     transition: var(--transition);
 }
 
@@ -180,11 +183,11 @@ li .menu__link:hover,
 .bar__menu {
     display: flex;
     justify-content: start;
-    position: fixed;
+    position: absolute;
     left: -100%;
     width: 100%;
     text-align: left;
-    background: white;
+    background: var(--white);
     transition: all 0.7s ease-in-out;
     z-index: 2;
 }
@@ -247,6 +250,7 @@ li .menu__link:hover,
 .hero__wrapper {
     max-width: 540px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .hero h1 {
@@ -290,15 +294,15 @@ li .menu__link:hover,
 }
 
 .isotop__filter .filter__item.filter__item-active .filter__link {
-    border-color: #000000;
-    color: #000;
+    border-color: var(--black);
+    color: var(--black);
     opacity: 1;
 }
 
 .isotop__filter .filter__item .filter__link {
     padding: 3px 15px;
     border: 1px solid transparent;
-    color: #666;
+    color: var(--main-text-color);
     opacity: 0.7;
     border-radius: 4px;
     font-size: 15px;
@@ -348,7 +352,7 @@ li .menu__link:hover,
     left: 0;
     top: 0;
     z-index: 1;
-    background: #000;
+    background: var(--black);
     opacity: 0;
 }
 
@@ -632,12 +636,13 @@ li .menu__link:hover,
     background-image: url("../img/about-bg.png");
     background-position: center center;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
     background-size: cover;
     z-index: -2;
 }
 
 .about__overlay {
-    background-color: #000;
+    background-color: var(--black);
     opacity: 0.5;
     display: block;
     height: 100%;
@@ -772,7 +777,7 @@ form .form__field textarea {
     padding: 8px 15px;
     border-radius: 4px;
     border: 1px solid #eaeaea;
-    color: #666;
+    color: var(--main-text-color);
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -799,10 +804,6 @@ textarea {
     padding: 0.7em 2.1em;
     min-width: 140px;
     transition: var(--transition);
-    /* border-bottom-left-radius: 1px;
-    border-bottom-right-radius: 1px;
-    border-top-left-radius: 1px;
-    border-top-right-radius: 1px; */
 }
 
 .form__field__btn button:hover {
@@ -848,19 +849,19 @@ textarea {
 }
 
 .slick__wrapper .slick__item .lg-1 {
-    background-image: url("../img/1nntm9p-m0i.jpg");
+    background-image: url("../img/lg-1.jpg");
 }
 
 .slick__wrapper .slick__item .sm-1 {
-    background-image: url("../img/5fluasxz_ua.jpg");
+    background-image: url("../img/sm-1.jpg");
 }
 
 .slick__wrapper .slick__item .lg-2 {
-    background-image: url("../img/5fluasxz_ua.jpg");
+    background-image: url("../img/sm-1.jpg");
 }
 
 .slick__wrapper .slick__item .sm-2 {
-    background-image: url("../img/pj_dcj9kswi.jpg");
+    background-image: url("../img/sm-2.jpg");
 }
 .slick-dotted.slick-slider {
     margin-bottom: 0;
@@ -882,7 +883,7 @@ ul.slick-dots {
 }
 
 .slick-dots li.slick-active {
-    background: #666;
+    background: var(--main-text-color);
     opacity: 1;
 }
 
@@ -902,7 +903,7 @@ ul.slick-dots {
     justify-content: center;
     font-size: 20px;
     color: #666;
-    background-color: #fff;
+    background-color: var(--white);
     margin-top: -24px;
     cursor: pointer;
     opacity: 0;
@@ -1020,11 +1021,11 @@ ul.slick-dots {
 .footer__wrapper form input {
     font-family: "Roboto", sans-serif;
     width: 100%;
-    background: #fff;
+    background: var(--white);
     border: 1px solid #fafafa;
     border-radius: 4px;
     height: 35px;
-    color: #666;
+    color: var(--dark-gray);
     padding: 0 15px;
     font-weight: 300;
     outline: none;
@@ -1037,7 +1038,7 @@ ul.slick-dots {
     height: 100%;
     width: 45px;
     border: none;
-    color: #fff;
+    color: var(--white);
     background: #5d5a9e;
     cursor: pointer;
     -webkit-transition: all 0.3s ease;
@@ -1086,10 +1087,10 @@ ul.slick-dots {
     font-size: 20px;
     cursor: pointer;
     z-index: 999999;
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 10px;
     border: 1px solid #eaeaea;
-    color: #666;
+    color: var(--main-text-color);
     transform: translateY(100px); 
     transition: all .5s ease
 } 

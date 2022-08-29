@@ -373,6 +373,12 @@
     .tb-shap-animation-wrap.tb-style1 .tb-shap-animation2 span {
         transform: rotate(15deg) scale(0.6);
     }
+    .tb-shap-animation-wrap.tb-style1
+    .tb-shap-animation1
+    .tb-shap-animation-in
+    span {
+    border: 32px solid #ffffff;
+    }
     .tb-shap-animation-wrap.tb-style1 .tb-shap-animation3 {
         height: 300px;
         width: 300px;
