@@ -1078,6 +1078,7 @@ ul.slick-dots {
 #scrollToTopBtn {
     position: fixed;
     right: 30px;
+    bottom: 0;
     height: 36px;
     width: 36px;
     display: flex;
@@ -1091,7 +1092,7 @@ ul.slick-dots {
     border-radius: 10px;
     color: var(--main-text-color);
     transform: translateY(100px); 
-    transition: all .5s ease
+    transition: all .6s ease
 } 
 
 #scrollToTopBtn:hover {
@@ -1101,6 +1102,6 @@ ul.slick-dots {
 
 .showBtn {
     opacity: 1;
-    bottom: 125px;
+    bottom: 125px!important;
     transform: translateY(0)
 }
