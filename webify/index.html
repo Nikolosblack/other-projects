@@ -285,33 +285,33 @@
     <section class="about">
         <div class="about__overlay"></div>
         <div class="container">
-            <header class="section-heading">
+            <header class="section-heading reveal fade-left">
                 <p>More About Me</p>
                 <h2>A fast & Agile Approach to project creation.</h2>            
             </header>
             <div class="about__wrapper">
-                <div class="about__item">
+                <div class="about__item reveal fade-left">
                     <h3>94%</h3>
                     <div class="progressbar">
                         <div class="percentage jquery" data-progress="94"></div>
                     </div>
                     <span>jQuery</span>
                 </div>
-                <div class="about__item">
+                <div class="about__item reveal fade-right">
                     <h3>80%</h3>
                     <div class="progressbar">
                         <div class="percentage php" data-progress="80"></div>
                     </div>
                     <span>PHP</span>
                 </div>
-                <div class="about__item">
+                <div class="about__item reveal fade-left">
                     <h3>70%</h3>
                     <div class="progressbar">
                         <div class="percentage wordpress" data-progress="70"></div>
                     </div>
                     <span>WordPress</span>
                 </div>
-                <div class="about__item">
+                <div class="about__item reveal fade-right">
                     <h3>80%</h3>
                     <div class="progressbar">
                         <div class="percentage design" data-progress="80"></div>
@@ -398,22 +398,5 @@
 <script src="./js/tabs.js"></script>
 <script src="./js/slick.js"></script>
 <script src="./js/scroll.js"></script>
-<script>function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-  
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 200;
-  
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-  
-  window.addEventListener("scroll", reveal);</script>
 </body>
 </html>
