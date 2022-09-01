@@ -1089,14 +1089,14 @@ ul.slick-dots {
     z-index: 999999;
     background-color: var(--white);
     border-radius: 10px;
-    border: 1px solid #eaeaea;
     color: var(--main-text-color);
     transform: translateY(100px); 
     transition: all .5s ease
 } 
 
 #scrollToTopBtn:hover {
-    color: #222;
+    color: var(--white);
+    background-color: var(--black);
 }
 
 .showBtn {

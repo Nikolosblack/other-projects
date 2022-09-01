@@ -1,5 +1,5 @@
 /* One Word Slider */
-
+/* 
 .slider {
     display: inline-block;
     height: 60px;
@@ -40,6 +40,36 @@
     }
     100% {
         margin-top: 0px;
+    }
+} */
+
+.scroller {
+    min-height: 1.3em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 10em;
+    vertical-align: middle;
+}
+
+.scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: -1.2em;
+    }
+    50% {
+        top: -2.4em;
+    }
+    75% {
+        top: -3.6em;
     }
 }
 
@@ -374,10 +404,10 @@
         transform: rotate(15deg) scale(0.6);
     }
     .tb-shap-animation-wrap.tb-style1
-    .tb-shap-animation1
-    .tb-shap-animation-in
-    span {
-    border: 32px solid #ffffff;
+        .tb-shap-animation1
+        .tb-shap-animation-in
+        span {
+        border: 32px solid #ffffff;
     }
     .tb-shap-animation-wrap.tb-style1 .tb-shap-animation3 {
         height: 300px;
@@ -396,5 +426,59 @@
     .tb-shap-animation-wrap.tb-style1 .tb-shap-animation2 {
         left: 35.9%;
         top: 2.1%;
+    }
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1.25s ease;
+}
+
+.active.fade-left {
+    animation: fade-left 1.25s ease;
+}
+
+.active.fade-right {
+    animation: fade-right 1.25s ease;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }

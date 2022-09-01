@@ -67,12 +67,21 @@
                 <p>David Gilmour</p>
                 <h1 class="ms-header__title" id="target">
                     Making at the sweet spot between <br> design and
-                    <span class="slider">
+                    <!-- <span class="slider">
                         <div class="slider-text1">speed.</div>
                         <div class="slider-text2">sustainability</div>
                         <div class="slider-text3">speed.</div>
-                    </span>
-                  </h1>
+                    </span> -->
+                    <div class="scroller">
+                        <span>
+                            speed.<br/>
+                            sustainability.<br/>
+                            speed.<br/>
+                            sustainability.
+                        </span>
+                      </div>
+                </h1>
+               
             </div>
         </div>
         <div class="tb-shap-animation-wrap tb-style1">
@@ -171,7 +180,7 @@
     </section>
     <section class="experience">
         <div class="container">
-            <header class="section-heading">
+            <header class="section-heading reveal fade-bottom">
                 <p>Work Experience</p>
                 <h2>I've been fortunate enough to work for fortune 500 companies.</h2>
             </header>
@@ -228,7 +237,7 @@
         <div class="container">
             <div class="resume__wrapper">
                 <div class="resume__tabs">
-                    <header class="section-heading">
+                    <header class="section-heading reveal fade-bottom">
                         <p>More About Me</p>
                         <h2>A fast & Agile Approachto project creation.</h2>            
                     </header>
@@ -267,7 +276,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="resume__img">
+                <div class="resume__img reveal fade-right">
                     <img src="./img/man.png" alt="man">
                 </div>
             </div>
@@ -316,7 +325,7 @@
         <div class="container">
             <div class="contact__wrapper">
                 <div class="contact__form">
-                    <header class="section-heading">
+                    <header class="section-heading reveal fade-bottom">
                         <p>Let's Talk</p>
                         <h2>Let’s hear from you.We shall talk.</h2>            
                     </header>
@@ -338,7 +347,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="contact__slider">
+                <div class="contact__slider reveal fade-right">
                     <div class="slick__wrapper">
                         <div class="slick__inner">
                             <div class="slick__item">
@@ -389,5 +398,22 @@
 <script src="./js/tabs.js"></script>
 <script src="./js/slick.js"></script>
 <script src="./js/scroll.js"></script>
+<script>function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 200;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);</script>
 </body>
 </html>
