@@ -414,7 +414,6 @@
     animation: fade-top 1.25s ease;
 }
 
-
 @keyframes fade-top {
     0% {
         transform: translateY(-100px);
@@ -425,7 +424,6 @@
         opacity: 1;
     }
 }
-
 
 @keyframes fade-bottom {
     0% {

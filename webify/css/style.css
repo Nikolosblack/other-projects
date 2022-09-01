@@ -849,19 +849,19 @@ textarea {
 }
 
 .slick__wrapper .slick__item .lg-1 {
-    background-image: url("../img/lg-1.jpg");
+    background-image: url("../img/slider/lg-1.jpg");
 }
 
 .slick__wrapper .slick__item .sm-1 {
-    background-image: url("../img/sm-1.jpg");
+    background-image: url("../img/slider/sm-1.jpg");
 }
 
 .slick__wrapper .slick__item .lg-2 {
-    background-image: url("../img/sm-1.jpg");
+    background-image: url("../img/slider/sm-1.jpg");
 }
 
 .slick__wrapper .slick__item .sm-2 {
-    background-image: url("../img/sm-2.jpg");
+    background-image: url("../img/slider/sm-2.jpg");
 }
 .slick-dotted.slick-slider {
     margin-bottom: 0;
