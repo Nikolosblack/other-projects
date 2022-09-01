@@ -620,7 +620,7 @@ li .menu__link:hover,
     position: relative;
     width: 100%;
     padding: 75px 0;
-
+    background-color: #f0adb6;
     color: var(--white);
     z-index: 99999;
 }
