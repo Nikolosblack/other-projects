@@ -44,7 +44,7 @@
   </tr>
   <tr>
     <td align="center">08</td>
-    <td align="center"><a href="https://github.com/Nikolosblack/other-projects/tree/main/responsive_masonry_layouts">Responsive Image Gallery</a></td>
+    <td align="center"><a href="https://github.com/Nikolosblack/other-projects/tree/main/responsive_masonry_layouts">Responsive Masonry Layouts</a></td>
     <td align="center"><a href="https://nikolosblack.github.io/other-projects/responsive_masonry_layouts/index.html" rel="nofollow">Live Demo</a></td>
   </tr>
 </tbody>
