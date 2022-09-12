@@ -37,5 +37,10 @@
     <td align="center"><a href="https://github.com/Nikolosblack/other-projects/tree/main/webify">Webify</a></td>
     <td align="center"><a href="https://nikolosblack.github.io/other-projects/webify/index.html" rel="nofollow">Live Demo</a></td>
   </tr>
+   <tr>
+    <td align="center">07</td>
+    <td align="center"><a href="https://github.com/Nikolosblack/other-projects/tree/main/responsive_image_gallery">Responsive Image Gallery</a></td>
+    <td align="center"><a href="https://nikolosblack.github.io/other-projects/responsive_image_gallery/index.html" rel="nofollow">Live Demo</a></td>
+  </tr>
 </tbody>
 </table>
