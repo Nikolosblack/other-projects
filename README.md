@@ -52,5 +52,10 @@
     <td align="center"><a href="https://github.com/Nikolosblack/other-projects/tree/main/responsive_nft_grid_gallery">Responsive NFT Grid Gallery</a></td>
     <td align="center"><a href="https://nikolosblack.github.io/other-projects/responsive_nft_grid_gallery/index.html" rel="nofollow">Live Demo</a></td>
   </tr>
+   <tr>
+    <td align="center">09</td>
+    <td align="center"><a href="https://github.com/Nikolosblack/other-projects/tree/main/grid_image_gallery">Grid Image Gallery</a></td>
+    <td align="center"><a href="https://nikolosblack.github.io/other-projects/grid_image_gallery/index.html" rel="nofollow">Live Demo</a></td>
+  </tr>
 </tbody>
 </table>
