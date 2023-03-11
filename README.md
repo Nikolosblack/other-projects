@@ -60,7 +60,7 @@
      <tr>
     <td align="center">11</td>
     <td align="center"><a href="https://github.com/Nikolosblack/other-projects/tree/main/promo_test">Promo Email Citrus</a></td>
-    <td align="center"><a href="https://github.com/Nikolosblack/other-projects/tree/main/promo_test/index.html" rel="nofollow">Live Demo</a></td>
+    <td align="center"><a href="https://nikolosblack.github.io/other-projects/promo_test/index.html" rel="nofollow">Live Demo</a></td>
   </tr>
 </tbody>
 </table>
